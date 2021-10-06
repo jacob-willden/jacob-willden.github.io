@@ -1,6 +1,6 @@
-# Hi, I'm Jacob Willden
+# Who I Am
 
-I'm passionate about bringing the web to life and seeing its impact.
+I'm web development student who's passionate about bringing the web to life and seeing its impact.
 
 ## Some of My Projects
 
