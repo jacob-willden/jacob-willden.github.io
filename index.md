@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+# Hi, I'm Jacob Willden
 
-You can use the [editor on GitHub](https://github.com/jacob-willden/jacob-willden.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+I'm passionate about bringing the web to life and seeing its impact.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Some of My Projects
 
-### Markdown
+* [Movie Content Filter Browser Extension](https://github.com/jacob-willden/movie-content-filter-extension)
+* Contributions to Other Repositories
+  * VideoSkip by Francisco Ruiz ([My Branch](https://github.com/jacob-willden/VideoSkip-extension))
+  * Family Friendly Content Creators Handbook by KensonPlays ([My Branch](https://github.com/jacob-willden/Family-Friendly-Content-Creators-And-Handbook))
+* Some Educational Projects (Hosted on Netlify)
+  * [Pokémon Cards](https://condescending-liskov-daaa2d.netlify.app/pokemon/index.html)
+  * [Star Wars Characters](https://condescending-liskov-daaa2d.netlify.app/characters/index.html)
+  * [Star Wars Species](https://condescending-liskov-daaa2d.netlify.app/species/index.html)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Want to talk?
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jacob-willden/jacob-willden.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+I'm available on [Github](https://github.com/jacob-willden/) and [LinkedIn](https://www.linkedin.com/in/jacob-willden-073a05221/). Looking forward to hearing from you!
