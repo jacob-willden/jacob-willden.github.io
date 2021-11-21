@@ -6,6 +6,7 @@ I'm web development student who's passionate about bringing the web to life and 
 
 ## Some of My Projects
 
+* [Video Ad Replacer](https://github.com/jacob-willden/video-ad-replacer)
 * [Movie Content Filter Browser Extension](https://github.com/jacob-willden/movie-content-filter-extension)
 * Contributions to Other Repositories
   * VideoSkip by Francisco Ruiz ([My Branch](https://github.com/jacob-willden/VideoSkip-extension))
