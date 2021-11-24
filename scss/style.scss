@@ -1,0 +1,43 @@
+@use "normalize";
+
+@use "typeface";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    max-width: 35rem;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    color: #222;
+    background-color: #eee;
+}
+
+main {
+    padding: 1rem;
+}
+
+a {
+    color: #222;
+}
+
+li {
+    padding-bottom: 1rem;
+}
+
+/* Dark Mode */
+
+/* For Firefox */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background-color: #222;
+    }
+    a {
+        color: #eee;
+    }
+}
+
+/* For Chromium & Safari */
+:root {
+    color-scheme: light dark;
+}
