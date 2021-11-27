@@ -16,7 +16,8 @@ main {
 }
 
 a {
-    color: #222;
+    color: #00f;
+    text-decoration-color: #11f;
 }
 
 li {
@@ -32,7 +33,9 @@ li {
         background-color: #222;
     }
     a {
-        color: #eee;
+        color: #bbf;
+        text-underline-offset: 0.0625rem; // 1/16 of the base font-size
+        text-decoration-color: #ccf;
     }
 }
 
