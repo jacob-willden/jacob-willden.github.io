@@ -2,9 +2,13 @@
 
 @use "typeface";
 
+html {
+    font-size: 1.125rem;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    max-width: 35rem;
+    max-width: 50rem;
     margin: 0 auto;
     line-height: 1.5rem;
     color: #222;
@@ -26,7 +30,7 @@ li {
 
 /* Dark Mode */
 
-/* For Firefox */
+// For Firefox before version 96
 @media (prefers-color-scheme: dark) {
     body {
         color: #eee;
@@ -39,7 +43,7 @@ li {
     }
 }
 
-/* For Chromium & Safari */
+// For Chromium, Safari, and Firefox version 96+
 :root {
     color-scheme: light dark;
 }
