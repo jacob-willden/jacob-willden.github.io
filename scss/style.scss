@@ -26,9 +26,12 @@ main {
     }
 }
 
-/* Dark Mode */
+// Dark Mode
 
-// For Firefox before version 96
+:root {
+    color-scheme: light dark;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         color: #eee;
@@ -40,10 +43,3 @@ main {
         text-decoration-color: #ccf;
     }
 }
-
-// For Chromium, Safari, and Firefox version 96+
-:root {
-    color-scheme: light dark;
-}
-
-// Add favicon?
