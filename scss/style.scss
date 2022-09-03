@@ -2,21 +2,54 @@
 
 @use "typeface";
 
+$primary-light: #eee;
+$primary-dark: #222;
+
 html {
     font-size: 1.125rem;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    max-width: 50rem;
-    margin: 0 auto;
     line-height: 1.5rem;
-    color: #222;
-    background-color: #eee;
+    color: $primary-dark;
+    background-color: $primary-light;
+}
+
+header {
+    background-color: #ddd;
+}
+
+nav {
+    max-width: 50rem;
+    padding: 1rem;
+    h1 {
+        margin: 0;
+    }
+    a {
+        max-width: 24rem;
+        text-decoration: none;
+        //text-underline-offset: 0.15rem;
+        color: $primary-dark;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    span {
+        margin: 0;
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+        font-weight: bold;
+        color: $primary-dark;
+        padding-left: 1rem;
+    }
 }
 
 main {
-    padding: 1rem;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 1rem 1rem 1rem;
     a {
         color: #00f;
         text-decoration-color: #11f;
@@ -26,6 +59,9 @@ main {
     }
 }
 
+// Padding between articles should be 4rem
+// Place everything within one column, except for the navigation
+
 // Dark Mode
 
 :root {
@@ -34,12 +70,23 @@ main {
 
 @media (prefers-color-scheme: dark) {
     body {
-        color: #eee;
-        background-color: #222;
+        color: $primary-light;
+        background-color: $primary-dark;
+    }
+    header {
+        background-color: #333;
+    }
+    nav {
+        img {
+            filter: invert(1);
+        }
+        a, span {
+            color: $primary-light;
+        }
     }
     main a {
         color: #bbf;
-        text-underline-offset: 0.0625rem; // 1/16 of the base font-size
         text-decoration-color: #ccf;
+        text-underline-offset: 0.0625rem; // 1/16 of the base font-size
     }
 }
