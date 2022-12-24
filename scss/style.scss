@@ -50,12 +50,21 @@ main {
     max-width: 50rem;
     margin: 0 auto;
     padding: 0 1rem 1rem 1rem;
+    h1 {
+        line-height: 3rem;
+    }
     a {
         color: #00f;
         text-decoration-color: #11f;
     }
+    ul, ol {
+        margin: 0;
+    }
     li {
         padding-bottom: 1rem;
+    }
+    .no-padding {
+        padding: 0;
     }
 }
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+    <title>Jacob Willden - Making a Music Player with Vanilla Javascript</title>
+    <meta name="description" content="Article description"> <!-- Don't forget this -->
+    <meta name="color-scheme" content="light dark">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                <a href="../index.html">
+                    <img srcset="../logo-1x.png 1x, ../logo-2x.png 2x, ../apple-touch-icon.png 3x" src="../apple-touch-icon.png" alt="" width="60" height="60">
+                    <span>Jacob Willden</span>
+                </a>
+            </h1>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Making a Music Player with Vanilla Javascript</h1>
+
+            <!-- Hero Image -->
+
+            <p>I regularly stream music through platforms like Spotify, Soundcloud, and even dabbled in more audiophile-oriented services like TIDAL and Qobuz. As a budding Web developer, I wondered if I could create a similar interface to these services using just JavaScript (including JavaScript Object Notation, also known as JSON), HyperText Markup Language (HTML), and Cascading Style Sheets (CSS), rather than including libraries that could add unneeded bloat to the player.</p>
+
+            <h2>Planning the Web App</h2>
+            <p>I asked myself the question: How can I implement the features needed for an online music player without using unnecessary libraries? The plan was for the Webpage to contain a list of songs, where clicking each one would load it into the music player. The player would have a play/pause button, a mute/unmute button, a volume control, and a bar for seeking to different parts of the song.</p>
+            <p>As this was a solo project, I had the role of both designer and developer, though my primary goal was the functionality.</p>
+
+            <h2>Starting to Build</h2>
+            <p>To begin the development process, I built the appropriate folder structure with the HTML file (the skeleton of the Webpage), a style sheet (which defines how the page will look), and a JavaScript file (which will provide the functionality). A music player requires music, so I downloaded 3 royalty-free songs from Josh Woodward and added them to the project in an audio folder.</p>
+            <p>While I could have hard-coded the HTML to include the songs, the Web app would be more scalable by storing the file paths and metadata (including as the artist's name and the release year) for the songs in a JSON file and retrieving the data using the fetch command in JavaScript. Then, when the user clicks or taps on a song in the list, the script loads it into the audio element to be played.</p>
+
+            <!-- image -->
+
+            <h2>Functionality and Accessibility</h2>
+            <p>As far as the HTML for the player itself goes, I could have used just an audio element, but as I discovered, that comes with a number of issues. For one, you cannot do much styling besides setting the margin, padding, border, and background color. For another, the individual elements inside the audio element (like the play or mute buttons) are not keyboard-focusable, meaning that those who are unable to use a mouse or to tap on a specific spot on a touchscreen (including individuals with certain motor impairments) would be unable to control the playback. </p>
+            <p>To make sure that the style of the audio player matched the rest of the page, and to achieve greater accessibility, I pursued the best alternative: adding custom elements for each of the player's controls and adding functionality to each button through JavaScript.</p>
+
+            <!-- images -->
+
+            <p>Technically, an audio element is still needed to hold the music, but I left out the controls attribute and replaced all the built-in controls with custom controls. For example, my JavaScript contained an event listener for the volume slider to adjust the music's volume based on the position where the slider is moved.</p>
+            <p>There were a couple of functions that I was not sure how to implement, one being how to display the current time in the song in minute-second format, and the other being the way to check when the user requests to seek to a different time in the song. So I looked up possible solutions, and found one on the StackOverflow site, and another on the Develop PHP tutorial site. They are credited in the script's comments.</p>
+
+            <h2>Styling</h2>
+            <p>Once all of the event listeners were wired up, nearly all the work that was left came down to styling and creating a consistent look for the Webpage. I wasn't sure how to display icons for the buttons at first. I started by trying text entities, but that quickly fell apart. Then I looked to Font Awesome and was able to find some good SVG (Scalable Vector Graphics) files, which I downloaded and linked to in the HTML as images. For every icon, I included alt text to ensure that the buttons' functions would still be clear if the SVGs did not load or if the user consumes Web content through a screen reader.</p>
+
+            <h2>Results</h2>
+            <p>In the end, the project resulted in a basic player that's responsive (meaning it works on mobile, tablet, and desktop/laptop devices), scalable, and accessible. I learned that replicating built-in HTML functionality with JavaScript can increase the usability and versatility of the markup. I also learned that it's okay to search the Web for help in implementing certain solutions, as long as I follow any license requirements and give credit where it's due. All in all, this project was fun and insightful!</p>
+            
+            <!-- image -->
+
+            <a href="https://dgm2760-jacobw.netlify.app/capstone/">Link to Finished Project</a>
+
+            <footer>
+                <p>Jacob Willden is a student in the Digital Media program at Utah Valley University, which is located in Orem, Utah, studying Web & App Development. This article relates to Building with JavaScript in the DGM 2760 course and representative of the skills learned.</p>
+            </footer>
+        </article>
+    </main>
+    <footer>
+        <address></address>
+    </footer>
+</body>
+</html>
