@@ -69,25 +69,25 @@ main {
     footer p {
         font-size: 0.8rem;
     }
-    /* .figure-container:not(:last-child) {
-        background-color: red;
-    } */
     figure {
-        display: table;
+        display: inline-block;
         margin: 0 auto;
     }
     img {
         max-width: 100%;
     }
     figcaption {
-        display: table-caption;
-        caption-side: bottom;
+        max-width: 99%;
     }
     .second-figure {
         padding-top: 1.2rem;
     }
     .padding-bottom-1rem {
         padding-bottom: 1rem;
+    }
+    .center-image {
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -96,12 +96,10 @@ main {
         .figure-container {
             display: flex;
             justify-content: space-between;
+            align-items: flex-end;
         }
         .second-figure {
             padding-top: 0;
-            padding-left: 1rem;
-        }
-        .second-figure figcaption {
             padding-left: 1rem;
         }
     }
