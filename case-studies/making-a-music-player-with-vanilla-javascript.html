@@ -41,13 +41,27 @@
             <p>To begin the development process, I built the appropriate folder structure with the HTML file (the skeleton of the Webpage), a style sheet (which defines how the page will look), and a JavaScript file (which will provide the functionality). A music player requires music, so I downloaded 3 royalty-free songs from Josh Woodward and added them to the project in an audio folder.</p>
             <p>While I could have hard-coded the HTML to include the songs, the Web app would be more scalable by storing the file paths and metadata (including as the artist's name and the release year) for the songs in a JSON file and retrieving the data using the fetch command in JavaScript. Then, when the user clicks or taps on a song in the list, the script loads it into the audio element to be played.</p>
 
-            <!-- image -->
+            <div class="figure-container">
+                <figure>
+                    <img src="../images/music-player/JSON in VS Code.png" alt="" loading="lazy">
+                    <figcaption>The JSON file, which lists song metadata, opened in Visual Studio Code.</figcaption>
+                </figure>
+            </div>
 
             <h2>Functionality and Accessibility</h2>
             <p>As far as the HTML for the player itself goes, I could have used just an audio element, but as I discovered, that comes with a number of issues. For one, you cannot do much styling besides setting the margin, padding, border, and background color. For another, the individual elements inside the audio element (like the play or mute buttons) are not keyboard-focusable, meaning that those who are unable to use a mouse or to tap on a specific spot on a touchscreen (including individuals with certain motor impairments) would be unable to control the playback. </p>
             <p>To make sure that the style of the audio player matched the rest of the page, and to achieve greater accessibility, I pursued the best alternative: adding custom elements for each of the player's controls and adding functionality to each button through JavaScript.</p>
 
-            <!-- images -->
+            <div class="figure-container">
+                <figure>
+                    <img src="../images/music-player/Native Audio Element Tab Access.png" alt="" loading="lazy">
+                    <figcaption>With just an audio HTML element, the individual buttons are inaccessible via keyboard.</figcaption>
+                </figure>
+                <figure class="second-figure">
+                    <img src="../images/music-player/JavaScript Audio Element Tab Access.png" alt="" loading="lazy">
+                    <figcaption>Using custom HTML controls with functionality added through JavaScript, each control can be accessed with a keyboard.</figcaption>
+                </figure>
+            </div>
 
             <p>Technically, an audio element is still needed to hold the music, but I left out the controls attribute and replaced all the built-in controls with custom controls. For example, my JavaScript contained an event listener for the volume slider to adjust the music's volume based on the position where the slider is moved.</p>
             <p>There were a couple of functions that I was not sure how to implement, one being how to display the current time in the song in minute-second format, and the other being the way to check when the user requests to seek to a different time in the song. So I looked up possible solutions, and found one on the StackOverflow site, and another on the Develop PHP tutorial site. They are credited in the script's comments.</p>
@@ -58,7 +72,12 @@
             <h2>Results</h2>
             <p>In the end, the project resulted in a basic player that's responsive (meaning it works on mobile, tablet, and desktop/laptop devices), scalable, and accessible. I learned that replicating built-in HTML functionality with JavaScript can increase the usability and versatility of the markup. I also learned that it's okay to search the Web for help in implementing certain solutions, as long as I follow any license requirements and give credit where it's due. All in all, this project was fun and insightful!</p>
             
-            <!-- image -->
+            <div class="figure-container padding-bottom-1rem">
+                <figure>
+                    <img src="../images/music-player/Finished Site Screenshot.png" alt="" loading="lazy">
+                    <figcaption>A screenshot of the final music player Web app.</figcaption>
+                </figure>
+            </div>
 
             <a href="https://dgm2760-jacobw.netlify.app/capstone/">Link to Finished Project</a>
 
@@ -67,8 +86,6 @@
             </footer>
         </article>
     </main>
-    <footer>
-        <address></address>
-    </footer>
+    <footer></footer>
 </body>
 </html>

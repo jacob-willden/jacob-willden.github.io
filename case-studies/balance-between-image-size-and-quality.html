@@ -34,7 +34,12 @@
             <h2>Introduction</h2>
             <p>There are many kinds of digital image formats available, but each one comes with its own advantages and disadvantages. To see how the compression of various formats affects image quality and size, I imported four provided images in uncompressed or lossless formats into Adobe Photoshop and then exported them using multiple methods and settings. The Navajo Dancer image was 6000 by 4000 pixels, while the others were 4240 by 2832.</p>
 
-            <!-- images -->
+            <div class="figure-container">
+                <figure>
+                    <img src="../images/asset-management/Page 2.png" alt="">
+                    <figcaption>The 4 test images, labeled Forbidden City Interior, Hanzhou Street, Navajo Dancer, and Tonglu Hat.</figcaption>
+                </figure>
+            </div>
 
             <p>Photoshop provides several different ways to export images, including "Save As", "Export As", "Save for Web (Legacy)", "Save Copy", and so on. Each export method has a different interface, and yield slightly different results, in file size and sometimes visual quality (even at the same export quality level). I used a mixture of these methods to get enough data.</p>
 
@@ -60,7 +65,12 @@
             <h2>How Device Storage Works</h2>
             <p>Every computer-based device has a finite amount of space to store information. At the smallest level, this information is stored in binary, which is a series of zeros and ones. Each zero and one in binary is called a bit, and eight bits constitutes a byte. Due to mathematics, we measure computer storage based on units such as Kilobyte (1024 bytes), Megabyte (1024 Kilobytes), Gigabyte (1024 Megabytes), Terabyte (1024 Gigabytes), Petabytes (1024 Terabytes), Yottabytes (1024 Petabytes), and so on.</p>
 
-            <!-- images -->
+            <div class="figure-container">
+                <figure>
+                    <img src="../images/asset-management/Storage Chart.png" alt="" loading="lazy">
+                    <figcaption>A table that visually compares different units of digital storage (as mentioned above).</figcaption>
+                </figure>
+            </div>
 
             <h2>Evaluation</h2>
             <p>If the export quality for an image is turned up too high, the file size will be much larger than necessary, and with little to no increase in perceptible visual quality. On the other hand, while turning down the export quality with higher compression means a smaller file size, the visual quality loss is usually obvious. Therefore, optimizing image files involves finding a balance between size and export quality.</p>
@@ -69,7 +79,12 @@
             <h2>Format Comparison Reference</h2>
             <p>The reference below is meant to act as a quick guide to how various image formats and their compression settings affect file size and quality. I included the first crop from the Hanzhou Street image because it has sharp lines, subtle changes in color, and patterns, making it an ideal candidate for seeing the visual differences due to compression. The RAW format refers to the original image captured on the camera before compression.</p>
 
-            <!-- image -->
+            <div class="figure-container">
+                <figure>
+                    <img src="../images/asset-management/Format Comparison Reference.png" alt="" loading="lazy">
+                    <figcaption>A comparison of the various formats at the greatest amount of compression possible in Adobe Photoshop.</figcaption>
+                </figure>
+            </div>
 
             <h2>How Compression Affected the Images</h2>
             <p>When comparing file sizes and quality, it's most helpful to look at lossy and lossless exports separately, hence the separate charts for the two. In the realm of lossy formats, WebP consistently achieved the smallest file size for the level of compression, with JPEG 2000 usually achieving 2nd place and JPEG in 3rd place, though there were exceptions. For example, the JPEG Export As method at level 5 quality (from 1 to 7) resulted in a smaller file size than JPEG 2000 Save As at 60% quality.</p>
@@ -87,8 +102,6 @@
             </footer>
         </article>
     </main>
-    <footer>
-        <address></address>
-    </footer>
+    <footer></footer>
 </body>
 </html>

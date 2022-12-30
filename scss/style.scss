@@ -66,10 +66,48 @@ main {
     .no-padding {
         padding: 0;
     }
+    footer p {
+        font-size: 0.8rem;
+    }
+    /* .figure-container:not(:last-child) {
+        background-color: red;
+    } */
+    figure {
+        display: table;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 100%;
+    }
+    figcaption {
+        display: table-caption;
+        caption-side: bottom;
+    }
+    .second-figure {
+        padding-top: 1.2rem;
+    }
+    .padding-bottom-1rem {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 40rem) {
+    main {
+        .figure-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .second-figure {
+            padding-top: 0;
+            padding-left: 1rem;
+        }
+        .second-figure figcaption {
+            padding-left: 1rem;
+        }
+    }
 }
 
 // Padding between articles should be 4rem
-// Place everything within one column, except for the navigation
 
 // Dark Mode
 
