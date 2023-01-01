@@ -78,16 +78,20 @@ main {
     }
     figcaption {
         max-width: 99%;
+        font-size: 0.9rem;
     }
     .second-figure {
         padding-top: 1.2rem;
     }
-    .padding-bottom-1rem {
-        padding-bottom: 1rem;
-    }
     .center-image {
         display: block;
         margin: 0 auto;
+    }
+    .padding-bottom-1rem {
+        padding-bottom: 1rem;
+    }
+    .max-width-400px {
+        max-width: 400px;
     }
 }
 
