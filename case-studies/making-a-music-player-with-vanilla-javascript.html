@@ -49,6 +49,7 @@
             </div>
 
             <h2>Functionality and Accessibility</h2>
+            <p>Edit: As of January 2023, controls for the audio and video elements in HTML are now keyboard-focusable by default in major browsers like Chrome and other Chromium browsers, Firefox, and Safari, so most of the following section is now only true with older versions of major browsers.</p>
             <p>As far as the HTML for the player itself goes, I could have used just an audio element, but as I discovered, that comes with a number of issues. For one, you cannot do much styling besides setting the margin, padding, border, and background color. For another, the individual elements inside the audio element (like the play or mute buttons) are not keyboard-focusable, meaning that those who are unable to use a mouse or to tap on a specific spot on a touchscreen (including individuals with certain motor impairments) would be unable to control the playback. </p>
             <p>To make sure that the style of the audio player matched the rest of the page, and to achieve greater accessibility, I pursued the best alternative: adding custom elements for each of the player's controls and adding functionality to each button through JavaScript.</p>
 
