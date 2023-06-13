@@ -1,6 +1,0 @@
-header -> nav -> h1 (site title)
-main -> article -> h1 (article title)
-footer (if it's for the whole document, otherwise place in article) -> address
-
-284px (min width)
-900px (max width)
